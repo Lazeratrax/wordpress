@@ -338,10 +338,25 @@
             border-radius: 3px;
             background-color: #1A1A1A;
             color: #FFFFFF;
-            box-shadow: 0 7px 20px rgba(26,26,26, 0.35);
+            box-shadow: 0 7px 20px rgba(26, 26, 26, 0.35);
         }
 
         /*----end-callback-----*/
+
+        /*---gallery_----*/
+
+        .gallery-wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .gallery__img {
+            width: 278px;
+            height: 290px;
+            padding-right: 30px;
+        }
+
+        /*---end gallery----*/
     </style>
 </head>
 <body>
@@ -539,26 +554,45 @@
         <!----end callback --->
 
         <!----gallery --->
-        <section class="gallery">
-            <h2 class="block__h2">Галерея работ</h2>
-            <div class="gallery-wrapper">
-                <img src="">
+        <section class="gallery__wrapper">
+            <h2 class="block__h2">
+                <hr class="block__h2_hr">
+                Галерея работ
+            </h2>
+            <div class="wrapper">
+                <div class="gallery">
+                    <div class="gallery-wrapper">
+                        <img class="gallery__img" src="./imgs/image_one.png" alt="">
+                        <img class="gallery__img" src="./imgs/image_two.png" alt="">
+                        <img class="gallery__img" src="./imgs/image_three.png" alt="">
+                        <img class="gallery__img" src="./imgs/image_four.png" alt="">
+                    </div>
+                </div>
             </div>
-
-
         </section>
         <!----end gallery --->
 
         <!----our_works --->
-        <section class="our-works">
-            <h2 class="block__h2">Наши объекты</h2>
-            <div class="our-works__listing">
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
+        <section class="our-works__wrapper">
+
+            <h2 class="block__h2">
+                <hr class="block__h2_hr">
+                Наши объекты
+            </h2>
+
+            <div class="wrapper">
+                <div class="our-works">
+                    <div class="our-works__listing">
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                    </div>
+                    <a href="">Увидеть больше</a>
+
+                </div>
             </div>
-            <a href="">Увидеть больше</a>
+
         </section>
         <!----end our_works --->
 
