@@ -32,6 +32,12 @@
     color: #1A1A1A;
 }
 
+.header-title__search > input {
+    width: 380px;
+    height: 45px;
+    border: 1px solid #1A1A1A;
+
+}
 
 /* ---------------.header-navbar*/
 .header-navbar {
