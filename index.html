@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/header.css">
+    <link type="text/css" rel="stylesheet" href="css/footer.css">
     <style>
-
         /*-------main-------*/
         /*--head---*/
 
@@ -75,7 +76,8 @@
             background-color: #FFFFFF;
         }
 
-        .services__item:hover, .services__item:focus {
+        .services__item:hover,
+        .services__item:focus {
             background-color: #297EBD;
             cursor: pointer;
             color: #FFFFFF;
@@ -86,30 +88,38 @@
 
         .services__item_img {
             background-repeat: no-repeat;
-            display: block; /* Рисунок как блочный элемент */
+            display: block;
+            /* Рисунок как блочный элемент */
             height: 70px;
         }
 
         .services__item_img-diamond {
-            width: 63px; /* Ширина рисунка в пикселах */
-            background-position: -63px 0; /* Смещение фона */
+            width: 63px;
+            /* Ширина рисунка в пикселах */
+            background-position: -63px 0;
+            /* Смещение фона */
             background-image: url("./imgs/icons/diamond.png");
         }
 
         .services__item_img-diamond-drilling {
-            width: 56px; /* Ширина рисунка в пикселах */
-            background-position: -56px 0; /* Смещение фона */
+            width: 56px;
+            /* Ширина рисунка в пикселах */
+            background-position: -56px 0;
+            /* Смещение фона */
             background-image: url("./imgs/icons/drilling.png");
         }
 
         .services__item_img-sandblast {
-            width: 30px; /* Ширина рисунка в пикселах */
-            background-position: -30px 0; /* Смещение фона */
+            width: 30px;
+            /* Ширина рисунка в пикселах */
+            background-position: -30px 0;
+            /* Смещение фона */
             background-image: url("./imgs/icons/hydro.png");
         }
 
-        .services__item:hover > .services__item_img {
-            background-position: 0 0; /* Смещение фона */
+        .services__item:hover>.services__item_img {
+            background-position: 0 0;
+            /* Смещение фона */
         }
 
 
@@ -164,7 +174,7 @@
             margin-bottom: 15px;
         }
 
-        .about__li > span {
+        .about__li>span {
             font-family: ZonaProBold, sans-serif;
         }
 
@@ -184,9 +194,7 @@
             justify-content: space-around;
         }
 
-        .how-to-work__p:after {
-
-        }
+        .how-to-work__p:after {}
 
         .how-to-work__stage {
             display: flex;
@@ -196,7 +204,7 @@
             position: relative;
         }
 
-        .how-to-work__stage > img:before {
+        .how-to-work__stage>img:before {
             content: '1';
 
         }
@@ -244,7 +252,7 @@
             margin-left: 31px;
         }
 
-        .callback__tels > a {
+        .callback__tels>a {
             color: #1A1A1A;
             margin-left: 5px;
             margin-right: 50px;
@@ -330,318 +338,405 @@
         }
 
         /*---end gallery----*/
-
     </style>
     <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
-<!----header --->
-<div class="page-wrapper">
+    <!----header --->
+    <div class="page-wrapper">
 
-    <!----header-wrapper --->
-    <header>
+        <!----header-wrapper --->
+        <header>
 
-        <div class="header-title__wrapper">
-            <div class="wrapper">
-                <div class="header-title">
-                    <h2 class="header-title__title">ооо "алмазные технологии"</h2>
-                    <div class="header-title__tels">
-                        <img src="imgs/tel.png" alt="" class="header__img">
-                        <a class="header-title__link" href="tel:+375441111111">+375 44 111 11 11</a>
-                        <a class="header-title__link" href="tel:+375441111111">+375 44 111 11 11</a>
+            <div class="header-title__wrapper">
+                <div class="wrapper">
+                    <div class="header-title">
+                        <h2 class="header-title__title">ооо "алмазные технологии"</h2>
+                        <div class="header-title__tels">
+                            <img src="imgs/tel.png" alt="" class="header__img">
+                            <a class="header-title__link" href="tel:+375441111111">+375 44 111 11 11</a>
+                            <a class="header-title__link" href="tel:+375441111111">+375 44 111 11 11</a>
+                        </div>
+                        <form class="header-title__search" action="/" method="post">
+                            <input type="text" placeholder="Поиск">
+                            <button></button>
+                        </form>
                     </div>
-                    <form class="header-title__search" action="/" method="post">
-                        <input type="text" placeholder="Поиск">
-                        <button></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <nav class="header-navbar">
-            <div class="wrapper">
-                <ul class="header-navbar-ul">
-                    <li><a class="header-navbar-ul__link" href="">Главная</a></li>
-                    <li class="header-navbar-ul__item"><a class="header-navbar-ul__link" href="">Услуги</a>
-                        <ul class="header-navbar__sub-ul">
-                            <li><a class="header-navbar__sub-ul_link" href="">Алмазное сверление</a></li>
-                            <li><a class="header-navbar__sub-ul_link" href="">Алмазная резка</a></li>
-                            <li><a class="header-navbar__sub-ul_link" href="">Гидропескоструйная очистка</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="header-navbar-ul__link" href="">Выполненные объекты</a></li>
-                    <li><a class="header-navbar-ul__link" href="">Расчет стоимости</a></li>
-                    <li><a class="header-navbar-ul__link" href="">Фотогалерея</a></li>
-                    <li><a class="header-navbar-ul__link" href="">О компании</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!---end-header-wrapper --->
-    <!----main --->
-    <main>
-        <!--        <div class="wrapper wrapper-main">-->
-        <!----head --->
-        <section class="head__wrapper">
-            <div class="wrapper">
-                <div class="head">
-                    <h1 class="head__title">алмазная резка</h1>
-                    <a class="head__link" href="">Узнать подробнее</a>
                 </div>
             </div>
 
-        </section>
-        <!----end head --->
+            <nav class="header-navbar">
+                <div class="wrapper">
+                    <ul class="header-navbar-ul">
+                        <li><a class="header-navbar-ul__link" href="">Главная</a></li>
+                        <li class="header-navbar-ul__item"><a class="header-navbar-ul__link" href="">Услуги</a>
+                            <ul class="header-navbar__sub-ul">
+                                <li><a class="header-navbar__sub-ul_link" href="">Алмазное сверление</a></li>
+                                <li><a class="header-navbar__sub-ul_link" href="">Алмазная резка</a></li>
+                                <li><a class="header-navbar__sub-ul_link" href="">Гидропескоструйная очистка</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="header-navbar-ul__link" href="">Выполненные объекты</a></li>
+                        <li><a class="header-navbar-ul__link" href="">Расчет стоимости</a></li>
+                        <li><a class="header-navbar-ul__link" href="">Фотогалерея</a></li>
+                        <li><a class="header-navbar-ul__link" href="">О компании</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-        <!----services --->
-        <section class="services__wrapper">
-
-            <h2 class="block__h2">
-                <hr class="block__h2_hr">
-                Наши услуги
-            </h2>
-
-            <div class="wrapper">
-
-                <div class="services">
-                    <a class="services__item">
-                        <div class=" services__item_img services__item_img-diamond"></div>АЛМАЗНАЯ РЕЗКА</a>
-                    <a class="services__item">
-                        <div class="services__item_img services__item_img-diamond-drilling"></div>АЛМАЗНОЕ СВЕРЛЕНИЕ</a>
-                    <a class="services__item">
-                        <div class="services__item_img services__item_img-sandblast"></div>ГИДРОПЕСКОСТРУЙНАЯ ОЧИСТКА</a>
+        <!---end-header-wrapper --->
+        <!----main --->
+        <main>
+            <!--        <div class="wrapper wrapper-main">-->
+            <!----head --->
+            <section class="head__wrapper">
+                <div class="wrapper">
+                    <div class="head">
+                        <h1 class="head__title">алмазная резка</h1>
+                        <a class="head__link" href="">Узнать подробнее</a>
+                    </div>
                 </div>
 
-            </div>
-            <!----calculate --->
-            <section class="calculate__wrapper">
+            </section>
+            <!----end head --->
+
+            <!----services --->
+            <section class="services__wrapper">
+
                 <h2 class="block__h2">
                     <hr class="block__h2_hr">
-                    Расчет стоимости работ
+                    Наши услуги
+                </h2>
+
+                <div class="wrapper">
+
+                    <div class="services">
+                        <a class="services__item">
+                            <div class=" services__item_img services__item_img-diamond"></div>АЛМАЗНАЯ РЕЗКА
+                        </a>
+                        <a class="services__item">
+                            <div class="services__item_img services__item_img-diamond-drilling"></div>АЛМАЗНОЕ СВЕРЛЕНИЕ
+                        </a>
+                        <a class="services__item">
+                            <div class="services__item_img services__item_img-sandblast"></div>ГИДРОПЕСКОСТРУЙНАЯ
+                            ОЧИСТКА
+                        </a>
+                    </div>
+
+                </div>
+                <!----calculate --->
+                <section class="calculate__wrapper">
+                    <h2 class="block__h2">
+                        <hr class="block__h2_hr">
+                        Расчет стоимости работ
+                    </h2>
+                    <div class="wrapper">
+                        <div class="calculate">
+
+                            <h3 class="calculate__title"></h3>
+
+                            <p class="calculate__p">
+                                Здесь вы можете приблизительно рассчитать стоимость работ по алмазному сверлению
+                                отверстий.
+                                Для этого выберите из списка нужный диапазон диаметров толщину и необходимое количество
+                                отверстий.</p>
+                            <p class="calculate__p"><b class="calculate__b">Диаметры в наличии:</b><br>
+                                32,40,50,60,80,90,100,107,122,125,130,150,
+                                160,180,200,225,250,275,300,330,350,400
+                            </p>
+
+                            <span class="calculate__min-order">Минимальный заказ = 60 рублей.</span>
+                            <span class="calculate__separator"></span>
+
+                        </div>
+                    </div>
+                </section>
+                <!----end calculate --->
+            </section>
+            <!----end services --->
+
+            <!----about --->
+            <section class="about__wrapper">
+                <h2 class="block__h2">
+                    <hr class="block__h2_hr">
+                    О нашей компании
                 </h2>
                 <div class="wrapper">
-                    <div class="calculate">
-
-                        <h3 class="calculate__title"></h3>
-
-                        <p class="calculate__p">
-                            Здесь вы можете приблизительно рассчитать стоимость работ по алмазному сверлению отверстий.
-                            Для этого выберите из списка нужный диапазон диаметров толщину и необходимое количество
-                            отверстий.</p>
-                        <p class="calculate__p"><b class="calculate__b">Диаметры в наличии:</b><br>
-                            32,40,50,60,80,90,100,107,122,125,130,150,
-                            160,180,200,225,250,275,300,330,350,400
+                    <div class="about">
+                        <p class="about__p">
+                            Зарегистрирована в сентябре 2010 года и с тех пор не испытывала дефицита работы. Штат
+                            специалистов
+                            8-12 человек позволяет покрывать потребности нескольких объектов одновременно. Мы
+                            специализируемся
+                            на демонтажных работах (сверление, резка и демонтаж) любой сложности. Десятки тысяч
+                            отверстий,
+                            сотни
+                            километров резки и сотни тысяч тонн демонтированного бетона. Каждый новый объект давал нам
+                            возможность расти и расширяться, учиться и совершенствовать свое мастерство в этой сфере. Мы
+                            рады
+                            раскрыть свой потенциал на ваших объектах и готовы к сотрудничеству.
                         </p>
 
-                        <span class="calculate__min-order">Минимальный заказ = 60 рублей.</span>
-                        <span class="calculate__separator"></span>
-
+                        <h5 class="about__h5">Чтобы заказать наши услуги вы можете:</h5>
+                        <ul class="about__ul">
+                            <li class="about__li">Позвонить по телефону: <span> + 375 33 671 00 00</span></li>
+                            <li class="about__li">Связаться по электронной почте: <span>info@di-tech.biz</span></li>
+                            <li class="about__li">Или направить нам корреспонденцию на следующий адрес:<br>
+                                <span>224020 г. Брест ул. 2-ая Заводская, д. 2</span></li>
+                        </ul>
                     </div>
                 </div>
             </section>
-            <!----end calculate --->
-        </section>
-        <!----end services --->
+            <!----end about --->
 
-        <!----about --->
-        <section class="about__wrapper">
-            <h2 class="block__h2">
-                <hr class="block__h2_hr">
-                О нашей компании
-            </h2>
-            <div class="wrapper">
-                <div class="about">
-                    <p class="about__p">
-                        Зарегистрирована в сентябре 2010 года и с тех пор не испытывала дефицита работы. Штат
-                        специалистов
-                        8-12 человек позволяет покрывать потребности нескольких объектов одновременно. Мы
-                        специализируемся
-                        на демонтажных работах (сверление, резка и демонтаж) любой сложности. Десятки тысяч отверстий,
-                        сотни
-                        километров резки и сотни тысяч тонн демонтированного бетона. Каждый новый объект давал нам
-                        возможность расти и расширяться, учиться и совершенствовать свое мастерство в этой сфере. Мы
-                        рады
-                        раскрыть свой потенциал на ваших объектах и готовы к сотрудничеству.
-                    </p>
+            <!----how-to-work --->
+            <section class="how-to-work__wrapper">
 
-                    <h5 class="about__h5">Чтобы заказать наши услуги вы можете:</h5>
-                    <ul class="about__ul">
-                        <li class="about__li">Позвонить по телефону: <span> + 375 33 671 00 00</span></li>
-                        <li class="about__li">Связаться по электронной почте: <span>info@di-tech.biz</span></li>
-                        <li class="about__li">Или направить нам корреспонденцию на следующий адрес:<br>
-                            <span>224020 г. Брест ул. 2-ая Заводская, д. 2</span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!----end about --->
+                <h2 class="block__h2">
+                    <hr class="block__h2_hr">
+                    Как с нами работать
+                </h2>
 
-        <!----how-to-work --->
-        <section class="how-to-work__wrapper">
+                <div class="wrapper">
+                    <div class="how-to-work">
 
-            <h2 class="block__h2">
-                <hr class="block__h2_hr">
-                Как с нами работать
-            </h2>
-
-            <div class="wrapper">
-                <div class="how-to-work">
-
-                    <div class="how-to-work__stage">
-                        <img src="imgs/icons/telep.png">
-                        <p class="how-to-work__stage_p">Свяжитесь<br> с нами</p>
-                    </div>
-                    <div class="how-to-work__stage">
-                        <img src="imgs/icons/callCenter.png">
-                        <p class="how-to-work__stage_p">Получите<br> консультацию</p>
-                    </div>
-                    <div class="how-to-work__stage">
-                        <img src="imgs/icons/dogovor.png">
-                        <p class="how-to-work__stage_p">Заключили<br> договор</p>
-                    </div>
-                    <div class="how-to-work__stage">
-                        <img src="imgs/icons/work.png">
-                        <p class="how-to-work__stage_p">Выполняем<br> работу</p>
-                    </div>
-                    <div class="how-to-work__stage">
-                        <img src="imgs/icons/profit.png">
-                        <p class="how-to-work__stage_p">+ 1 довольный<br> клиент</p>
+                        <div class="how-to-work__stage">
+                            <img src="imgs/icons/telep.png">
+                            <p class="how-to-work__stage_p">Свяжитесь<br> с нами</p>
+                        </div>
+                        <div class="how-to-work__stage">
+                            <img src="imgs/icons/callCenter.png">
+                            <p class="how-to-work__stage_p">Получите<br> консультацию</p>
+                        </div>
+                        <div class="how-to-work__stage">
+                            <img src="imgs/icons/dogovor.png">
+                            <p class="how-to-work__stage_p">Заключили<br> договор</p>
+                        </div>
+                        <div class="how-to-work__stage">
+                            <img src="imgs/icons/work.png">
+                            <p class="how-to-work__stage_p">Выполняем<br> работу</p>
+                        </div>
+                        <div class="how-to-work__stage">
+                            <img src="imgs/icons/profit.png">
+                            <p class="how-to-work__stage_p">+ 1 довольный<br> клиент</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </section>
-        <!----end how-to-work --->
+            </section>
+            <!----end how-to-work --->
 
-        <!----callback --->
-        <section class="callback_wrapper">
-            <div class="wrapper">
+            <!----callback --->
+            <section class="callback_wrapper">
+                <div class="wrapper">
 
-                <div class="callback">
+                    <div class="callback">
 
-                    <h4 class="callback__h4">Звоните прямо сейчас!</h4>
+                        <h4 class="callback__h4">Звоните прямо сейчас!</h4>
 
-                    <div class="callback__tels">
-                        <img src="imgs/icons/tel.png" alt="" class="header__img">
-                        <a class="header__link" href="tel:+375441111111">+375 44 111 11 11</a>
-                        <img src="imgs/icons/tel.png" alt="" class="header__img">
-                        <a class="header__link" href="tel:+375441111111">+375 44 111 11 11</a>
-                    </div>
-                    <br>
-                    <p>ИЛИ</p>
+                        <div class="callback__tels">
+                            <img src="imgs/icons/tel.png" alt="" class="header__img">
+                            <a class="header__link" href="tel:+375441111111">+375 44 111 11 11</a>
+                            <img src="imgs/icons/tel.png" alt="" class="header__img">
+                            <a class="header__link" href="tel:+375441111111">+375 44 111 11 11</a>
+                        </div>
+                        <br>
+                        <p>ИЛИ</p>
 
-                    <div class="callback__form-wrapper">
-                        <h4 class="callback__form-wrapper_h4">Оставьте Вашу заявку и мы перезвоним Вам</h4>
-                        <p class="callback__form-wrapper_p">Оставьте Ваши данные и наши сотрудники свяжутся с вами в
-                            ближайшее время</p>
-                        <form action="POST" class="callback__form">
-                            <input type="text" class="callback__form-input" placeholder="Имя">
-                            <input type="number" class="callback__form-input" placeholder="Телефон">
-                            <input type="email" class="callback__form-input" placeholder="E-mail">
-                            <button type="submit" class="callback__form-button">Отправить</button>
-                        </form>
-                    </div>
+                        <div class="callback__form-wrapper">
+                            <h4 class="callback__form-wrapper_h4">Оставьте Вашу заявку и мы перезвоним Вам</h4>
+                            <p class="callback__form-wrapper_p">Оставьте Ваши данные и наши сотрудники свяжутся с вами в
+                                ближайшее время</p>
+                            <form action="POST" class="callback__form">
+                                <input type="text" class="callback__form-input" placeholder="Имя">
+                                <input type="number" class="callback__form-input" placeholder="Телефон">
+                                <input type="email" class="callback__form-input" placeholder="E-mail">
+                                <button type="submit" class="callback__form-button">Отправить</button>
+                            </form>
+                        </div>
 
-                </div>
-            </div>
-
-
-        </section>
-        <!----end callback --->
-
-        <!----gallery --->
-        <section class="gallery__wrapper">
-            <h2 class="block__h2">
-                <hr class="block__h2_hr">
-                Галерея работ
-            </h2>
-            <div class="wrapper">
-                <div class="gallery">
-                    <div class="gallery-wrapper">
-                        <img class="gallery__img" src="./imgs/image_one.png" alt="">
-                        <img class="gallery__img" src="./imgs/image_two.png" alt="">
-                        <img class="gallery__img" src="./imgs/image_three.png" alt="">
-                        <img class="gallery__img" src="./imgs/image_four.png" alt="">
                     </div>
                 </div>
-            </div>
-        </section>
-        <!----end gallery --->
 
-        <!----our_works --->
-        <section class="our-works__wrapper">
 
-            <h2 class="block__h2">
-                <hr class="block__h2_hr">
-                Наши объекты
-            </h2>
+            </section>
+            <!----end callback --->
 
-            <div class="wrapper">
-                <div class="our-works">
-                    <div class="our-works__listing">
-                        <a href=""><img src="" alt=""></a>
-                        <a href=""><img src="" alt=""></a>
-                        <a href=""><img src="" alt=""></a>
-                        <a href=""><img src="" alt=""></a>
+            <!----gallery --->
+            <section class="gallery__wrapper">
+                <h2 class="block__h2">
+                    <hr class="block__h2_hr">
+                    Галерея работ
+                </h2>
+                <div class="wrapper">
+                    <div class="gallery">
+                        <div class="gallery-wrapper">
+                            <img class="gallery__img" src="./imgs/image_one.png" alt="">
+                            <img class="gallery__img" src="./imgs/image_two.png" alt="">
+                            <img class="gallery__img" src="./imgs/image_three.png" alt="">
+                            <img class="gallery__img" src="./imgs/image_four.png" alt="">
+                        </div>
                     </div>
-                    <a href="">Увидеть больше</a>
-
                 </div>
-            </div>
+            </section>
+            <!----end gallery --->
 
-        </section>
-        <!----end our_works --->
+            <!----our_works --->
+            <section class="our-works__wrapper">
 
-        <!----our_works --->
-        <div class="map"></div>
-        <!----end our_works --->
+                <h2 class="block__h2">
+                    <hr class="block__h2_hr">
+                    Наши объекты
+                </h2>
 
-        <!--        </div>-->
-    </main>
+                <div class="wrapper">
+                    <div class="our-works">
+                        <div class="our-works__listing">
+                            <a href=""><img src="" alt=""></a>
+                            <a href=""><img src="" alt=""></a>
+                            <a href=""><img src="" alt=""></a>
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                        <a href="">Увидеть больше</a>
 
-    <!----footer --->
-    <footer>
-        <div class="wrapper">
-            <h2></h2>
-            <div class="footer-content-wrapper">
-                <div class="footer-content">
-                    <div>
-                        <h3>РЕЖИМ РАБОТЫ:</h3>
-                        <ul>
-                            <li>Пн: 8.00-17.00</li>
-                            <li>Вт: 8.00-17.00</li>
-                            <li> Ср: 8.00-17.00</li>
-                            <li>Чт: 8.00-17.00</li>
-                            <li>Пт: 8.00-17.00</li>
-                            <li>Сб: Выходной (прием заказов на пн.)</li>
-                            <li>Вс: Выходной (прием заказов на пн.)</li>
-                        </ul>
                     </div>
+                </div>
 
-                    <div>
-                        <h3>АРХИВ:</h3>
-                        <div class="footer__calendar">
+            </section>
+            <!----end our_works --->
+
+            <!----our_works --->
+            <div class="map"></div>
+            <!----end our_works --->
+
+            <!--        </div>-->
+        </main>
+
+        <!----footer --->
+        <footer>
+            <div class="wrapper">
+                <h2>ООО "АЛМАЗНЫЕ ТЕХНОЛОГИИ"</h2>
+                <div class="footer-content-wrapper">
+                    <div class="footer-content">
+                        <div>
+                            <h3>РЕЖИМ РАБОТЫ:</h3>
+                            <ul>
+                                <li>Пн: 8.00-17.00</li>
+                                <li>Вт: 8.00-17.00</li>
+                                <li> Ср: 8.00-17.00</li>
+                                <li>Чт: 8.00-17.00</li>
+                                <li>Пт: 8.00-17.00</li>
+                                <li>Сб: Выходной (прием заказов на пн.)</li>
+                                <li>Вс: Выходной (прием заказов на пн.)</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3>АРХИВ:</h3>
+                            <div class="footer__calendar">
+                            </div>
+                        </div>
+
+                        <div class='footer_req'>
+                            <h3>РЕКВИЗИТЫ:</h3>
+                            <p>
+                                <span class='footer_svg'>
+                                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d)">
+                                            <rect x="15" y="11" width="32" height="32" rx="16" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d" x="0" y="0" width="62" height="62"
+                                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                <feOffset dy="4" />
+                                                <feGaussianBlur stdDeviation="7.5" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                                    result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                    <svg class='tube' width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.2778 9.02778C11.375 9.02778 10.5083 8.88333 9.69944 8.61611C9.44667 8.53667 9.165 8.59444 8.96278 8.78944L7.37389 10.3783C5.33 9.33833 3.65444 7.67 2.61444 5.61889L4.20333 4.02278C4.40556 3.835 4.46333 3.55333 4.38389 3.30056C4.11667 2.49167 3.97222 1.625 3.97222 0.722222C3.97222 0.325 3.64722 0 3.25 0H0.722222C0.325 0 0 0.325 0 0.722222C0 7.50389 5.49611 13 12.2778 13C12.675 13 13 12.675 13 12.2778V9.75C13 9.35278 12.675 9.02778 12.2778 9.02778Z"
+                                            fill="#1A1A1A" />
+                                    </svg>
+                                </span>
+
+                                <a href="" class='footer_number'>8-033-671-00-00</a>
+                            </p>
+                            <p>
+                                <span class='footer_svg'>
+                                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d)">
+                                            <rect x="15" y="11" width="32" height="32" rx="16" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d" x="0" y="0" width="62" height="62"
+                                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                <feOffset dy="4" />
+                                                <feGaussianBlur stdDeviation="7.5" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                                    result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                    <svg class='tube' width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.2778 9.02778C11.375 9.02778 10.5083 8.88333 9.69944 8.61611C9.44667 8.53667 9.165 8.59444 8.96278 8.78944L7.37389 10.3783C5.33 9.33833 3.65444 7.67 2.61444 5.61889L4.20333 4.02278C4.40556 3.835 4.46333 3.55333 4.38389 3.30056C4.11667 2.49167 3.97222 1.625 3.97222 0.722222C3.97222 0.325 3.64722 0 3.25 0H0.722222C0.325 0 0 0.325 0 0.722222C0 7.50389 5.49611 13 12.2778 13C12.675 13 13 12.675 13 12.2778V9.75C13 9.35278 12.675 9.02778 12.2778 9.02778Z"
+                                            fill="#1A1A1A" />
+                                    </svg>
+                                </span>
+
+                                <a href="" class='footer_number'>8-033-671-00-00</a>
+                            </p>
+                            <p>224004, г. Брест<br> ул. Лейтенанта Рябцева д. 104, оф. 22<br> УНП 290961740</p>
                         </div>
                     </div>
 
-                    <div>
-                        <h3>РЕКВИЗИТЫ:</h3>
-                        <span><img src="" alt=""><a href=""></a></span>
-                        <span><img src="" alt=""><a href=""></a></span>
-                        <p>224004, г. Брест<br> ул. Лейтенанта Рябцева д. 104, оф. 22<br> УНП 290961740</p>
+                    <div class="marks">
+                        <h3>МЕТКИ:</h3>
+                        <ul>
+                            <li>Алмазная резка</li>
+                            <li>Алмазная резка</li>
+                            <li>Алмазная резка</li>
+                            <li>Алмазная резка</li>
+                            <li>Алмазная резка</li>
+                            <li>Алмазная резка</li>
+                            <li>Алмазная резка</li>
+                            <li>Алмазная резка</li>
+                            <li>Алмазная резка</li>
+                            <li>Алмазная резка</li>
+                            <li>Алмазная резка</li>
+                            <li>Алмазная резка</li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="marks">
-                </div>
             </div>
-
-            <p class="footer"></p>
-        </div>
-    </footer>
-    <!----end footer --->
-</div>
+        </footer>
+        <p class="footer">Copyright © 2020 ООО "Алмазные технологии" - Алмазная резка, Алмазное сверление в Бресте, Алмазное бурение, Расширение проемов, Демонтаж</p>
+        <!----end footer --->
+    </div>
 
 </body>
+
 </html>

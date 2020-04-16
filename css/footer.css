@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+}
+footer * {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background: linear-gradient(
+    90deg,
+    #114368 0%,
+    #1a5784 45.77%,
+    #1a5784 102.19%
+  );
+  font-family: Zona Pro;
+  font-style: normal;
+  font-weight: normal;
+  max-width: 1980px;
+  padding-left: 18.75%;
+  padding-right: 18.75%;
+  padding-top: 4.545%;
+  padding-bottom: 4.545%;
+  color: white;
+}
+footer h2 {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+footer h3 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+footer ul {
+  font-size: 16px;
+  line-height: 19px;
+  list-style: none;
+}
+
+.footer_svg {
+  position: relative;
+  display: inline-block;
+}
+
+.footer_svg .tube {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+
+.footer_number {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  margin-top: 7.5%;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer_req > p {
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background: #1a1a1a;
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 20px;
+  margin:0px;
+  text-align: center;
+  font-family: Zona Pro;
+}
+
+.marks>ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.marks>ul>li{
+    background: #C4C4C4;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: Zona Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    padding:4px 17px 4px 27px;
+    color: black;
+}
